@@ -1,4 +1,6 @@
 //'use strict';
+import 'leaflet';
+import L from 'leaflet';
 
 class Workout {
   date = new Date();
