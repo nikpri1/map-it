@@ -1,0 +1,15 @@
+{
+  "name": "mapty",
+  "version": "1.0.0",
+  "description": "Almost Strava application :)",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "nik",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
