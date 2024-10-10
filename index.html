@@ -18,7 +18,15 @@
     />-->
 
     <script defer type="module" src="script.js"></script>
-    <link rel="stylesheet" href="/node_modules/leaflet/dist/leaflet.css" />
+    <!--<link rel="stylesheet" href="/node_modules/leaflet/dist/leaflet.css" />-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script type="module" src="leaflet/leaflet.js"></script>
+
     <!-- LEAFLET-->
 
     <title>mapty // Map your workouts</title>
@@ -112,17 +120,6 @@
           </div>
         </li> -->
       </ul>
-
-      <p class="copyright">
-        &copy; Copyright by
-        <a
-          class="twitter-link"
-          target="_blank"
-          href="https://twitter.com/jonasschmedtman"
-          >Jonas Schmedtmann</a
-        >. Use for learning or your portfolio. Don't use to teach. Don't claim
-        as your own.
-      </p>
     </div>
 
     <div id="map"></div>
