@@ -1,3 +1,3 @@
-# Maprty project
+# map it app
 
 A minimal Strava.
