@@ -72,6 +72,7 @@ const inputDistance = document.querySelector('.form__input--distance');
 const inputDuration = document.querySelector('.form__input--duration');
 const inputCadence = document.querySelector('.form__input--cadence');
 const inputElevation = document.querySelector('.form__input--elevation');
+const message = document.querySelector('.message');
 
 class App {
   #map;
@@ -126,6 +127,7 @@ class App {
   _showForm(mapE) {
     this.#mapEvent = mapE;
     form.classList.remove('hidden');
+    message.classList.add('hidden');
     inputDistance.focus();
   }
 
@@ -221,6 +223,8 @@ class App {
   }
 
   _renderWorkout(workout) {
+    message.classList.add('hidden');
+
     let html = `
     <li class="workout workout--${workout.type}" data-id="${workout.id}">
     <h2 class="workout__title">${workout.description}</h2>
